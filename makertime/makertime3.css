@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    transition: background 0.5s;
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+select, input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#weatherInfo, #forecastInfo {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.sunny {
+    background-image: url('sunny.jpg');
+}
+
+.cloudy {
+    background-image: url('cloudy.jpg');
+}
+
+.rainy {
+    background-image: url('rainy.jpg');
+}
+
+.snowy {
+    background-image: url('snowy.jpg');
+}

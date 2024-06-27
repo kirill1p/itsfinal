@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="makertime3.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Поточна погода</h1>
+        <select id="locationSelect" onchange="fetchWeather()">
+            <option value="Kyiv">Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Odesa">Одеса</option>
+        </select>
+        <input type="text" id="cityInput" placeholder="Введіть назву міста">
+        <button onclick="searchCity()">Пошук</button>
+        <div id="weatherInfo">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+        <div id="forecastInfo"></div>
+        <p id="errorMessage" class="error"></p>
+    </div>
+    <script src="makertime2.js"></script>
+</body>
+</html>
